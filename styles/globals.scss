@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #121214;
+  --white: #FFFFFF;
+  --gray: #29292e;
+  --gray-100: #e1e1e6;
+  --gray-700: #323238;
+  --gray-300: #a8a8b3;
+  --orange: orange;
+  --gray-850: #25373b;
+  --cyan-500: #61dafb;
+  --yellow-500: #eba417;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.50%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--white);
+}
+
+body, input, button, textarea, select, a {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+

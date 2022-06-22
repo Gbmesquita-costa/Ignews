@@ -1,0 +1,17 @@
+.button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1.3rem;
+    margin-top: 2.25rem;
+    margin-left: 1rem;
+    border-radius: 3rem;
+    width: 240px;
+    background: var(--orange);
+
+    transition: 0.2s;
+
+    &:hover {
+        background: var(--yellow-500);
+        color: white;
+    }
+}
