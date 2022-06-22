@@ -6,14 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "slicemachine": "start-slicemachine"
+    "lint": "next lint"
   },
   "dependencies": {
     "@prismicio/client": "5.1.1",
     "@prismicio/helpers": "^2.2.1",
     "@prismicio/react": "^2.2.0",
-    "@prismicio/slice-simulator-react": "^0.2.1",
     "@stripe/stripe-js": "^1.26.0",
     "@testing-library/dom": "^8.13.0",
     "@testing-library/jest-dom": "^5.16.4",
