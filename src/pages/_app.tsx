@@ -9,12 +9,14 @@ import "react-toastify/dist/ReactToastify.min.css"
 import '../../styles/globals.scss'
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const AnyComponent = Component as any
+
   return (
-    <NextAuthProvider session={pageProps.session}>
-      <ToastContainer />
-      <Header />
-      <Component {...pageProps} />
-    </NextAuthProvider>
+      <NextAuthProvider session={pageProps.session}>
+          <Header />
+          <ToastContainer />
+          <AnyComponent {...pageProps} />
+      </NextAuthProvider>
   )
 }
 
