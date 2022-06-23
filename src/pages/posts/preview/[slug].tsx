@@ -31,17 +31,17 @@ export default function PostPreview({ post }: PostWithPreview) {
     return(
         <>
             <Head>
-                <title>{post.title} | Ignews</title>
+                <title>{post?.title} | Ignews</title>
             </Head>
 
             <main className={styles.container}>
                 <article className={styles.post}>
-                    <h1>{post.title}</h1>
-                    <time>{post.updatedAt}</time>
+                    <h1>{post?.title}</h1>
+                    <time>{post?.updatedAt}</time>
 
                     <div 
                         className={`${styles.postContent} ${styles.previewContent}`}
-                        dangerouslySetInnerHTML={{ __html: post.content }} 
+                        dangerouslySetInnerHTML={{ __html: post?.content }} 
                     />
 
                     <div className={styles.continueReading}>
